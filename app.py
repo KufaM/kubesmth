@@ -4,7 +4,6 @@ from flask_migrate import Migrate
 from flask_wtf import FlaskForm
 from wtforms import SelectField, IntegerField, SubmitField
 from wtforms.validators import DataRequired
-from models import db, Person
 app = Flask(__name__)
 
 # Nastavení pro SQLite databázi

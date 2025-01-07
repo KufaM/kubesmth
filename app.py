@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-
+from flask_wtf import FlaskForm
+from wtforms import SelectField, IntegerField, SubmitField
+from wtforms.validators import DataRequired
+from models import db, Person
 app = Flask(__name__)
 
 # Nastavení pro SQLite databázi
